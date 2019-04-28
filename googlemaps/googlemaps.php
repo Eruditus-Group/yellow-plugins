@@ -27,9 +27,8 @@ class YellowGooglemaps
 			if(empty($style)) $style = $this->yellow->config->get("googlemapsStyle");
 			$language = $page->get("language");
 			$output = "<div class=\"".htmlspecialchars($style)."\">";
-			$output .= "<iframe src=\"https://maps.google.com/maps?q=".rawurlencode($address)."&amp;ie=UTF8&amp;t=m&amp;z=".rawurlencode($zoom)."&amp;hl=$language&amp;iwloc=near&amp;num=1&amp;output=embed\" frameborder=\"0\"";
-			if($width && $height) $output .= " width=\"".htmlspecialchars($width)."\" height=\"".htmlspecialchars($height)."\"";
-			$output .= "></iframe></div>";
+			$output .= "<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfTLtHsMnjg_1Mfg2yYLu6xvWl390IcFyJmgtHAw8TrLmlOzQ/viewform?embedded=true" width="640" height="900" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+</div>";
 		}
 		return $output;
 	}
